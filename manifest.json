@@ -1,0 +1,32 @@
+{
+
+    "manifest_version": 2,
+    "name": "Better Fam",
+    "version": "1.2.0",
+    "author" : "Matheus Rangel",
+  
+    "description": "Makes FAM's website better",
+  
+    "icons": {
+      "48": "icon/bfam.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://www.famportalacademico.com.br/fam/", "*://www.famportalacademico.com.br/fam/index.php*"],
+        "js": ["Scripts/main.js"],
+        "css": ["Styles/menu_style_light.css"]
+      },
+      {
+        "matches": ["*://www.famportalacademico.com.br/fam/index.php?style=C*"],
+        "js": ["Scripts/main.js"],
+        "css": ["Styles/menu_style_dark.css"]
+      },
+      {
+        "matches" : ["*://www.famportalacademico.com.br/fam/pg_portal.php*"],
+        "js" : ["Scripts/portal.js"],
+        "css" : ["Styles/portal_style_light.css"]
+      }
+    ]
+  
+  }

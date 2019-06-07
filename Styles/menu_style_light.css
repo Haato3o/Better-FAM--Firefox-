@@ -1,0 +1,65 @@
+/* Import a better font */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+  }
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+  }
+
+
+/* CSS Document */
+#bottom{width:100%; height:30px; top:9px; margin-left:0px; border-bottom:solid 1px #333333;}
+/* #bottom a:link, #bottom a:visited{ color: #333333; text-decoration:none;}
+#bottom a:hover{ color: #333333; text-decoration:underline;}
+#colunas{width:100%; height:40px; margin-left:20px; margin-top:10px; clear:both; text-align:center; }
+#colunas a:link, #colunas a:visited{ color: #333333; text-decoration:none;}
+#colunas a:hover{ color: #333333; text-decoration:underline;} */
+#colunas strong{ font-family:Tahoma; font-size: 12px; color: #2580a2;}
+#rodape{width:800px; min-height:256px; background:url(images/bg_rodape.gif) repeat-x;}
+
+#l_topo{ background:url(images/l_topo.jpg); background-repeat:repeat-x;}
+#r_topo{ background:url(images/r_topo.jpg); background-repeat:repeat-x;}
+td { background-repeat:repeat-x; font-family: 'Roboto', sans-serif;}
+
+a {text-decoration: none;}
+
+/* Fill window with banner */
+table {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.bnr_topo{background-color: #036582; box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px;}
+.bnr_portal{font-family: 'Roboto', sans-serif; font-size: 80px; color: #FFFFFF; font-weight: bold;}
+.bnr_academico{font-family: 'Roboto', sans-serif; font-size: 80px; color: #FFFFFF; font-weight: bold;}
+.tela_login {width: 100%; margin: 2px auto; }
+.box_login {
+  transition: 200ms; 
+  color: black; 
+  font-size: 16px; 
+  font-family: 'Roboto', sans-serif; 
+  background-color: transparent; 
+  border: none; 
+  border-bottom: solid 2px #036582;
+  font-weight: normal;
+}
+.box_login:focus {border-bottom:2px solid #034f66;}
+.box_login:hover {border-bottom:2px solid #034f66;}
+.btn_login {font-family: 'Roboto', sans-serif; height:35px; font-size: 16px; color: #FFFFFF; background-size: 100%; background-color: #036582; border: none; cursor: pointer; border-radius: 3px; padding: 10px; transition: 200ms;}
+.btn_login:hover {background-color: #034f66;}
+

@@ -1,0 +1,338 @@
+.embed-container { 
+position: relative; 
+padding-bottom: 56.25%; 
+height: 0; 
+overflow: hidden; 
+max-width: 100%; 
+height: auto;
+margin-top: 30px;
+margin-bottom: 30px; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed {
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 100%; 
+}
+
+/* CSS Document */
+#bottom{width:100%; height:30px; top:9px; margin-left:0px; border-bottom:solid 1px #333333;}
+/* #bottom a:link, #bottom a:visited{ color: #333333; text-decoration:none;}
+#bottom a:hover{ color: #333333; text-decoration:underline;}
+#colunas{width:100%; height:40px; margin-left:20px; margin-top:10px; clear:both; text-align:center; }
+#colunas a:link, #colunas a:visited{ color: #333333; text-decoration:none;}
+#colunas a:hover{ color: #333333; text-decoration:underline;} */
+#colunas strong{ font-family:Tahoma; font-size: 13px; color: #2580a2;}
+#rodape{width:800px; min-height:256px; background:url(images/bg_rodape.gif) repeat-x;}
+
+#l_topo{ background:url(images/l_topo.jpg); background-repeat:repeat-x;}
+#r_topo{ background:url(images/r_topo.jpg); background-repeat:repeat-x;}
+td { background-repeat:repeat-x;}
+
+
+/*
+a:link {color: #999999; text-decoration:none; border:0;}
+a:visited {color: #99999; text-decoration:none; border:0;}
+a:hover {color: #999999; text-decoration:none; border:0;}
+a:active {color: #999999; text-decoration:none; border:0;}
+*/
+
+.bnr_topo{background-color: #036582;}
+.bnr_portal{font-family: Gabo, Open Sans, Sans-Serif, Arial, Helvetica; font-size: 80px; color: #0099FF; font-weight: bold;}
+.bnr_academico{font-family: Gabo, Open Sans, Sans-Serif, Arial, Helvetica; font-size: 80px; color: #FFFFFF; font-weight: bold;}
+.tela_login {width: 100%; margin: 2px auto; }
+.box_login {font-size: 16px; font-weight: bold; background-color: #CCCCCC; border-style: solid; }
+.btn_login {height:35px; font-size: 16px; color: #FFFFFF; font-weight: bold; background-size: 100%; background-color: #036582; }
+
+.branco{color: #333333;}
+.coluna1{ width:260px; height:170px; float:left;}
+.coluna1Cont{ width:210px; color: #FFFFFF; font-family:Tahoma; font-size: 10px; line-height:12px;}
+.copy{width:400px; height:18px; font-size: 13px; float:left; margin-top:10px; margin-left:25px;}
+.line{ width:100%; height:2px; background:url(images/line.jpg); background-repeat:no-repeat; margin-top:5px;}
+.tahoma{font-family:Tahoma;}
+.work{width:350px; height:18px; font-family:Tahoma; font-size: 10px; float:left; margin-left:0px; margin-top:10px;}
+.textorodape { font-family: Arial, Helvetica, sans-serif; font-size: 11px; }	
+.artigo { font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left:25px; }
+.leiamais { font-family: Arial, Helvetica, sans-serif; font-size: 10px; margin-left:25px; }
+.formlayout {FONT-WEIGHT: normal; font-size: 11px; WIDTH: 50px; COLOR: #666666; FONT-FAMILY: Verdana; HEIGHT: 17px; BACKGROUND-COLOR: #ffffff; }
+input, select, file {font-size: 12px; background-color: #FFFFFF; padding: 1px; color: #333333; margin: 0px; border: 1px solid #333333; height: 22px; }
+.Corpo {background-color:FFFFFF; margin:0; font-family:verdana,arial,helvetica; font-size: 13px;}
+.ItemForm {text-align:right; padding-right:5px; font-family:verdana,arial,helvetica; font-size: 13px; font-weight:bold; color:teal;}
+.Botao {font-family:verdana,arial,helvetica; font-size: 13px; color:black; background-color: #FFFFFF; border-style:solid; border-width:2; cursor:hand;}
+.TituloListagem {padding-left:5px; font-family:verdana,arial,helvetica; font-weight:bold; font-size: 13px; color:FFFFFF; background-color:teal; text-align:center;}
+.GradeNotasRep {border-style:solid; border-width:1px; border-color:CCCCCC; background-color:FFFFFF; font-family:verdana,arial,helvetica; font-size: 13px;     	font-weight:bold; border-radius: 5px; -moz-border-radius: 5px; color: red; }
+.GradeLinha { border:0px; background-color: #000000; border-radius: 5px; -moz-border-radius: 5px;}
+.NotasRecImpar {padding-left:5px; padding-right:5px; height:17px; background-color: #F0F0F0; font-family:Arial, Helvetica, sans-serif; font-size: 13px; color: #000000; font-weight: bold; text-decoration:none; border:2px; border-style:solid; border-width:1; border-color: #FF9999; }
+.NotasRecPar {padding-left:5px; padding-right:5px; height:17px; background-color: #FFFFFF; font-family:Arial, Helvetica, sans-serif; font-size: 13px; color: #000000; font-weight: bold; text-decoration:none; border:2px; border-style:solid; border-width:1; border-color: #FF9999; }
+.NotasImpar {padding-left:5px; padding-right:5px; height:17px; background-color: #F0F0F0; font-family:Arial, Helvetica, sans-serif; font-size: 13px; color: #000000; font-weight: bold; text-decoration:none; border:2px; border-style:solid; border-width:1; border-color: #99CCFF;  }
+.NotasPar {padding-left:5px; padding-right:5px; height:17px; background-color: #FFFFFF; font-family:Arial, Helvetica, sans-serif; font-size: 13px; color: #000000; font-weight: bold; text-decoration:none; border:2px; border-style:solid; border-width:1; border-color: #99CCFF; }
+.TitTab {padding-left:5px; font-family:verdana,arial,helvetica; font-size: 13px; font-weight:bold; color:FFFFFF; background-color: #52a3a3;}
+.ItemTab {padding-left:5px; font-family:verdana,arial,helvetica; font-size: 13px; color:black; background-color: #F7F7F7;}
+.Letra {font-family:verdana,arial,helvetica; font-size: 13px; font-weight:bold; border-style:solid; border-width:1px; border-left-style:none; border-right-style:none; border-color:CCCCCC; background-color:FFFFFF; text-align:center;}
+.LetraDestaque {font-family:verdana,arial,helvetica; font-size: 13px; font-weight:bold; border-style:solid; border-width:1px; border-left-style:none; border-right-style:none; border-color:CCCCCC; background-color: #CCCCCC; text-align:center;}
+.TituloPaginacao {padding-left:5px; font-family:verdana,arial,helvetica; font-weight:bold; font-size: 13px; color:FFFFFF; background-color:teal;}
+.InfoPaginacao {padding-left:5px; font-family:verdana,arial,helvetica; font-size: 13px; color:black; background-color:ffeedd; vertical-align:middle;}
+.tab_ficha {width: 800px; border-style:solid; border-width:1px; border-color:CCCCCC; background-color:FFFFFF; text-align:left; font-family:verdana,arial,helvetica; font-size: 13px;}
+.dados_dev {height:25px; width:85px; font-family:Arial, Helvetica, sans-serif; font-size: 13px; text-align:center; background-color: #FFE8E8; }	
+.cp {  font: bold 10px Arial; color: black}
+.ti {  font: 9px Arial, Helvetica, sans-serif}
+.ld { font: bold 15px Arial; color: #000000}
+.ct { FONT: 9px "Arial Narrow"; COLOR: #000033}
+.cn { FONT: 9px Arial; COLOR: black }
+.bc { font: bold 20px Arial; color: #000000 }
+.ld2 { font: bold 12px Arial; color: #000000 }
+
+textarea { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #000000; font-weight: bold; background-color: #FFFFFF; padding: 1px;  margin: 0px; border: 1px solid #333333;  }
+body { background-image: url(images/bg.gif); background-position: center center; background-repeat: no-repeat; margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; }
+
+.titulo 	{ 
+font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: #990000; font-weight: bold;
+}
+.text { 
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #FFFFFF;	
+}
+.user { 
+font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #333333; font-weight: bold;
+margin-left:65px; 
+}
+.tituloartigo {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #666666; font-weight: bold;
+margin-left:25px;
+}
+.topo_logo { 
+width:180px; height:90px; border:0; 
+}
+.textbox {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+background-color: #FFFFFF; border-style: solid; border-width: 1; border-radius: 5px; -moz-border-radius: 5px;
+}
+.textbox:focus { border: 2px solid; border-color: #CC0000; }
+.LinkLetra {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #CCCCCC; font-weight: bold; 
+text-decoration:none;
+}
+.LinkLetra:hover { color: #990000; }
+.Descricoes {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #FFFFFF; font-weight: bold; 
+padding: 5px; background-color: #666666;
+}
+.Grade {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; 
+border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: #FFFFFF; text-align: left;  border-radius: 5px; -moz-border-radius: 5px;
+}
+.GradeNotas {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: #FFFFFF;  border-radius: 5px; -moz-border-radius: 5px; 
+}
+.GradeNotasPlano {
+font-family: Arial, Helvetica, sans-serif; font-size: 15px;	color: #000000; 
+border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: #FFFFFF;  border-radius: 5px; -moz-border-radius: 5px; 
+}
+.GradeNotasDestaque {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: #99CCFF; border-radius: 5px; -moz-border-radius: 5px; 
+}
+.GradeNotasDestaque:focus { border: 2px solid; border-color: #CC0000; }
+.GradeNotasAlerta {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: #FFFFCC; border-radius: 5px; -moz-border-radius: 5px;
+}
+.GradeNotasAlerta:focus { border: 2px solid; border-color: #CC0000; }
+.GradeNotasAviso {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #FFFFFF; font-weight: bold;
+border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: #FF0000; border-radius: 5px; -moz-border-radius: 5px;
+}
+.GradeNotasAviso:focus { border: 2px solid; border-color: #CC0000; }
+.GradeNotasLivre {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: #CCFFCC; border-radius: 5px; -moz-border-radius: 5px;
+}
+.GradeNotasLivre:focus { border: 2px solid; border-color: #CC0000; }
+tr.lovelyrow1{
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+text-decoration: none; padding-left: 5px; padding-right: 5px; height: 17px; background-color: #E6E6FA;  
+}
+tr.lovelyrow1:hover{
+  background-color: #99CCFF;
+  cursor: pointer;
+}
+tr.lovelyrow2{
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; 
+text-decoration: none; padding-left: 5px; padding-right: 5px; height: 17px; background-color: #FFFFFF; 
+}
+tr.lovelyrow2:hover{
+  background-color: #99CCFF;
+  cursor: pointer;
+}
+table.nogap{
+  border-collapse: collapse;
+}
+td.nicepadding{
+  padding: 2px 10px 2px 10px;
+  border: 1px solid black;
+  border-color: #99CCFF;
+  
+}
+.LinhaImpar {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+text-decoration: none; padding-left: 5px; padding-right: 5px; height: 25px; vertical-align: text-center; background-color: #E6E6FA;  
+
+}
+.LinhaPar {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+text-decoration: none; padding-left: 5px; padding-right: 5px; height: 25px; vertical-align: text-center; background-color: #FFFFFF; 
+}
+.ColunaPar {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+text-decoration: none; padding-left: 1px; padding-right: 1px; height: 17px; background-color: #FFFFFF; border-top-style: solid; border-bottom-style: solid; border-width: 1px; border-color: #CCCCCC;
+}
+.ColunaImpar {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+text-decoration: none; padding-left: 1px; padding-right: 1px; height: 17px; background-color: #CCCCCC; border-top-style: solid; border-bottom-style: solid; border-width: 1px; border-color: #CCCCCC; 
+}
+.ColunaMP {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+text-decoration: none; padding-left: 1px; padding-right: 1px; height: 17px; background-color: #CCFFCC; border-top-style: solid; border-bottom-style: solid; border-width: 1px; border-color: #CCCCCC; 
+}
+.ColunaMF {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+text-decoration: none; padding-left: 1px; padding-right: 1px; height: 17px; background-color: #99CCFF; border-top-style: solid; border-bottom-style: solid; border-width: 1px; border-color: #CCCCCC; 
+}
+.Mensagens {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #CCCCCC; font-weight: bold;
+}
+.MensagensAtv {
+font-family: Arial, Helvetica, sans-serif; font-size: 10px;	color: #990000; font-weight: bold;
+}
+.InfoProcura {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+padding: 5px; background-color: #CCCCCC;
+}
+.GabNro {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #FFFFFF; font-weight: bold;
+text-decoration: none; padding-left: 5px; padding-right: 5px; height: 17px; background-color: #0000FF; 
+}
+.GabRes {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #FF0000; font-weight: bold;
+text-decoration: none; padding-left: 5px; padding-right: 5px; height: 17px; background-color: #FFFFFF; 
+}
+.GabCor {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #FFFFFF; font-weight: bold;
+text-decoration: none; padding-left: 5px; padding-right: 5px; height: 17px; background-color: #008000; 
+}
+.GabEra {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #FFFFFF; font-weight: bold;
+text-decoration: none; padding-left: 5px; padding-right: 5px; height: 17px; background-color: #FF0000;  
+}
+.GabDis {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+text-decoration: none; padding-left: 5px; padding-right: 5px; height: 17px; background-color: #FFD700; 
+}
+.tit_corpo { 
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #FFFFFF; font-weight: bold;
+padding: 5px; background-color: #666666;
+}
+.dados_baixa {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000;
+text-align: center; height: 25px; width: 85px;  background-color: #E6F7FF; 
+}		
+.dados_botao_boleto {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000;
+text-align: center; cursor: pointer; text-decoration: none; border-radius: 5px; -moz-border-radius: 5px; 
+}
+/*.dados_botao_boleto:hover { border: 2px solid; border-color: #CC0000; }*/
+
+.fundo_cab 	{ 
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #FFFFFF; font-weight: bold;
+text-decoration: none; background-color: #999999; 
+}
+.fundo_cab:link { color: #FFFFFF; text-decoration: none; border: 0; }
+.fundo_cab:visited { color: #FFFFFF; text-decoration: none; border: 0; }
+.fundo_cab:hover { color: #FFFFFF; text-decoration: none; border: 0; }
+.fundo_cab:active {color: #FFFFFF; text-decoration: none; border: 0; }
+.fundo_top 	{ 
+font-family: Arial, Helvetica, sans-serif; font-size: 11px;	color: #333333; font-weight: bold;
+background-color: #999999;  
+}
+.fundo_meio { background-color: #F5F5F5; }
+.fundo_fim 	{ background-color: #999999; }
+.fundo_lado { background-color: #CCCCCC; }
+
+.login { 
+font-family: Arial, Helvetica, sans-serif; font-size: 20px;	color: #333333; font-weight: bold;
+}
+.login-u { 
+font-family: Arial, Helvetica, sans-serif; font-size: 20px;	color: #990000; font-style: italic;
+}
+.login-button {	
+float: left; width: 45px; margin: 2px 10px;
+}
+.login-art { 
+font-family: Arial, Helvetica, sans-serif; font-size: 24px;	color: #333333; font-weight: bold;
+}
+.login-ard { 
+font-family: Arial, Helvetica, sans-serif; font-size: 14px;	color: #990000; font-style: italic;
+}
+.text_branco { 
+font-family: Arial, Helvetica, sans-serif; font-size: 11px;	color: #FFFFFF; font-weight: bold;
+text-decoration:none; background-color: #FFFFFF; border-bottom-style:dotted;
+}
+
+.aviso_titulo {	
+font-family: Arial, Helvetica, sans-serif; font-size: 14px;	color: #990000; font-weight: bold;
+}
+.aviso_titulo2 {	
+font-family: Arial, Helvetica, sans-serif; font-size: 14px;	color: #0000CC; background-color: #0000CC; font-weight: bold;
+}
+.aviso_texto   {	
+font-family: Arial, Helvetica, sans-serif; font-size: 14px;	color: #000000;
+}
+.aviso_titulo_plano {
+font-family: Arial, Helvetica, sans-serif; font-size: 17px;	color: #990000; font-weight: bold;
+background-color: #CCCCCC;
+}
+.aviso_titulo_planob {
+font-family: Arial, Helvetica, sans-serif; font-size: 17px;	color: #990000; font-weight: bold;
+background-color: #FFFFFF;
+}
+.ReqAlerta1 {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #FFFFFF; font-weight: bold;
+border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: #FF0000; 
+}
+.ReqAlerta2{
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #000000; font-weight: bold;
+border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: #FFFF00; 
+}
+.ReqAlerta3 {
+font-family: Arial, Helvetica, sans-serif; font-size: 13px;	color: #FFFFFF; font-weight: bold;
+border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: #009900; 
+}
+
+.barrav{
+font-family: Arial, Helvetica, sans-serif; font-size: 11px;	color: #000000; font-weight: bold;
+border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: #CCCCCC; 
+}
+.barrap{
+font-family: Arial, Helvetica, sans-serif; font-size: 11px;	color: #FFFFFF; font-weight: bold;
+border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: #CC0000; 
+}
+
+#login-ard { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #990000; 
+ 	float:rigth;
+	list-style: none;
+	margin: 5;
+	padding: 5;
+	width: 100%;
+}
+#login-ard li { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #990000; text-decoration: none; 
+	float:rigth;
+	margin: 5;
+	padding: 5;
+}
+#login-ard a { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #990000; text-decoration: none;
+	float:rigth;
+	margin: 5;
+	padding: 5;
+}
+#login-ard a:hover {	color: #CC0000; }

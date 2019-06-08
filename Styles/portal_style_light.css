@@ -40,6 +40,10 @@ a {text-decoration: none;}
 .btn_login {font-family: 'Roboto', sans-serif; height:35px; font-size: 16px; color: #FFFFFF; background-size: 100%; background-color: #036582; border: none; cursor: pointer; border-radius: 3px; padding: 10px; transition: 200ms;}
 .btn_login:hover {background-color: #034f66;}
 
+.fundo_top {
+    display: none;
+}
+
 #frame_reload {
     height: 0px;
 }
@@ -94,16 +98,23 @@ a {text-decoration: none;}
     color: white;
     height: 30px;
     transition: 200ms;
-    box-shadow: black 0px 1px 2px 0px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .dados_botao_boleto:hover {
     background: none;
     background-color: #01526b;
     color: white !important;
+
 }
 
 /* email table */
+
+tr.lovelyrow1 {
+    transition: 200ms;
+}
+
 tr.lovelyrow2 {
     transition: 200ms;
 }
@@ -115,4 +126,60 @@ tr.lovelyrow2 {
 .lovelyrow2 .nicepadding {
     font-weight: lighter;
     color: #535353;
+}
+
+.Grade {
+    border-radius: 0px;
+    border: none;
+    background-color: #034f66;
+}
+
+.Grade .Descricoes {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    background-color: #034f66;
+}
+
+.Grade .LinhaImpar {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    background-color: #f7f7f7;
+    border-color: #034f66;
+}
+
+.GradeNotas {
+    border-radius: 0px;
+}
+
+#abas {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    box-shadow: none;
+    background: none;
+}
+
+#abas li {
+    background: none;
+    background-color: transparent;
+    border: solid 1px #CCCCCC;
+    border-bottom-width: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    transition: 200ms;
+}
+
+#abas li a {
+    background: none;
+    transition: 200ms;
+}
+
+#abas li:hover {
+    cursor: pointer;
+    background-color: #dfdfdf;
+}
+
+#abas li:hover a{  
+    color: black;
 }

@@ -70,7 +70,17 @@ function fixCFAImageDark() {
     }
 }
 
+function fixFAMLogo() {
+    let logo = document.getElementsByClassName("topo_logo")[0];
+    logo.src = "https://i.imgur.com/SFPASn7.png";
+    logo.style.width = "160px";
+    logo.style.height = "60px";
+    logo.style.marginLeft = "1.2%";
+    logo.style.marginTop = "1.2%";
+}
+
 function RunExtension() {
+    fixFAMLogo();
     DarkModeCheck();
     UpdateTopBanner();
     fixThemeButton();

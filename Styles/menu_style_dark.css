@@ -54,17 +54,17 @@ table {
     color: white; 
     font-size: 16px; 
     font-family: 'Roboto', sans-serif; 
-    background-color: transparent; 
+    background-color: #1d1d1d; 
     border: solid 1px #036582; 
     padding-left: 10px;
     font-weight: normal;
     border-radius: 1px;
     height: 30px;
   }
-  .box_login:focus {border-color:#034f66; border-left-width: 5px;}
-  .box_login:hover {border-color:#034f66; border-left-width: 5px;}
-  .btn_login {font-family: 'Roboto', sans-serif; height:35px; font-size: 16px; color: #FFFFFF; background-size: 100%; background-color: #036582; border: solid 1px #036582; cursor: pointer; border-radius: 1px; padding: 10px; transition: 200ms;}
-  .btn_login:hover {background-color: #034f66;}
+.box_login:focus {border-color:#034f66; border-left-width: 5px;}
+.box_login:hover {border-color:#034f66; border-left-width: 5px;}
+.btn_login {font-family: 'Roboto', sans-serif; height:35px; font-size: 16px; color: #FFFFFF; background-size: 100%; background-color: #036582; border: solid 1px #036582; cursor: pointer; border-radius: 1px; padding: 10px; transition: 200ms;}
+.btn_login:hover {background-color: #034f66;}
 .fundo_meio {
     background-color: #141414;
     margin: 0px auto;

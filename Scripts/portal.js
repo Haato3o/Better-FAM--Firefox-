@@ -17,8 +17,37 @@ function fixHardcodedShit() {
     }
 }
 
+function removeUglyCharFromButton() {
+    let btn = document.getElementsByClassName("dados_botao_boleto");
+    for (let i in btn) {
+        let button = btn[i];
+        if (button.value != " << " && button.value != " >> ") {
+            button.value = button.value.replace("<< ", "").replace(" >>", "")
+        } else {
+            button.value = button.value.replace("<<", "⮜").replace(">>", "⮞")
+        }
+    }
+    return;
+}
+
+function removeAbaImage() {
+    let td = document.getElementsByTagName("td");
+    for (let i in td) {
+        let tData = td[i];
+        try {
+            if (tData.attributes.background.value == "images/abal.png") {
+                tData.attributes.background.value = null;
+                return;
+            }
+        } catch {}
+        
+    }
+}
+
 function RunExtension() {
     UpdateTopBanner();
     fixHardcodedShit();
+    removeAbaImage();
+    removeUglyCharFromButton();
 }
 RunExtension();

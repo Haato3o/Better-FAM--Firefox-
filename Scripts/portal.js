@@ -1,8 +1,8 @@
-// Made by Matheus
-
+// Variables
 let DarkMode = false;
 
 function UpdateTopBanner() {
+    // Updates the banner to remove the white borders around it
     let topBanner = document.getElementsByTagName("table").valueOf()[0];
     topBanner.style.width = "100%";
     topBanner.style.margin = "0px auto";
@@ -10,6 +10,7 @@ function UpdateTopBanner() {
 }
 
 function fixHardcodedShit() {
+    // Fixes the hardcoded line break in the side menu
     let links = document.getElementsByTagName("a");
     for (let i in links) {
         if (links[i].href.endsWith("ficha_financeira.php")) {
@@ -20,6 +21,7 @@ function fixHardcodedShit() {
 }
 
 function removeUglyCharFromButton() {
+    // Remove the << and >> from the buttons
     let btn = document.getElementsByClassName("dados_botao_boleto");
     try {
         for (let i in btn) {
@@ -35,6 +37,7 @@ function removeUglyCharFromButton() {
 }
 
 function removeAbaBGImage() {
+    // Remove the ugly background image from the tabs
     let td = document.getElementsByTagName("td");
     for (let i in td) {
         let tData = td[i];
@@ -49,6 +52,7 @@ function removeAbaBGImage() {
 }
 
 function removeAbaImage() {
+    // Remove the side tab border image
     let img = document.getElementsByTagName("img");
     try {
         for (let i in img) {
@@ -63,6 +67,7 @@ function removeAbaImage() {
 }
 
 function fixTextSpacing() {
+    // Fixes text left margin
     let fonts = document.getElementsByTagName("font");
     for (let i in fonts) {
         try {
@@ -86,28 +91,41 @@ function fixTextSpacing() {
 }
 
 function fixThemeButtonImage(element) {
-    element.src = "https://i.imgur.com/UtKLylb.png";
+    let icon;
+    if (DarkMode) {
+        icon = browser.runtime.getURL("Images/sun_icon.png");
+    } else {
+        icon = browser.runtime.getURL("Images/moon_icon.png");
+    }
+    element.src = icon;
 }
 
 function fixCFAImage() {
+    // Fix the CFA alert image on the site footer
     let siteImages = document.getElementsByTagName("img");
     for (let img in siteImages) {
-        if (siteImages[img].src != undefined && siteImages[img].src.endsWith("uploads/bnr_0021.png")) {      
+        if (siteImages[img].src == undefined) {
+            continue;
+        }
+        if (siteImages[img].src.endsWith("uploads/bnr_0021.png")) {      
             if (DarkMode) {
-                siteImages[img].src = "https://i.imgur.com/x3z8Vfw.png";
+                let CFA_DARK = browser.runtime.getURL("Images/CFA_Warning_Dark.png");
+                siteImages[img].src = CFA_DARK;
                 siteImages[img].width = 700;
             } else {
-                siteImages[img].src = "https://i.imgur.com/z23KQGO.png";
+                let CFA_LIGHT = browser.runtime.getURL("Images/CFA_Warning_Light.png");   
+                siteImages[img].src = CFA_LIGHT;
                 siteImages[img].width = 700;
             }
         }
-        else if (siteImages[img].src != undefined && siteImages[img].src.endsWith("acessibilidade_altocontraste.png")) {         
+        else if (siteImages[img].src.endsWith("acessibilidade_altocontraste.png")) {    
             fixThemeButtonImage(siteImages[img])
         }
     }
 }
 
 function UpdateTextColor() {
+    // Fixes the password alert on the site footer
     let textColor;
     if (DarkMode) {
         textColor = "#FFFFFF";
@@ -123,12 +141,22 @@ function UpdateTextColor() {
 } 
 
 function fixFAMLogo() {
+    // Changes FAM logo for an image with better quality
     let logo = document.getElementsByClassName("topo_logo")[0];
-    logo.src = "https://i.imgur.com/SFPASn7.png";
+    let LOGO_IMAGE = browser.runtime.getURL("Images/FAM_Logo.png");
+    logo.src = LOGO_IMAGE;
     logo.style.width = "160px";
     logo.style.height = "60px";
     logo.style.marginLeft = "1.2%";
     logo.style.marginTop = "1.2%";
+}
+
+function removeTableSpacing() {
+    let tables = document.getElementsByClassName("GradeNotas")[0];
+    tables.parentElement.parentElement.parentElement.parentElement.cellPadding = 1;
+
+    
+
 }
 
 function RunExtension() {
@@ -140,7 +168,8 @@ function RunExtension() {
     removeUglyCharFromButton();
     removeAbaImage();
     fixCFAImage();
-    UpdateTextColor();
-
+    removeTableSpacing();
+    UpdateTextColor(); 
 }
+
 RunExtension();

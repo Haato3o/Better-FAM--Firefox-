@@ -1,13 +1,16 @@
+// Variables
 let DarkMode = false;
 
-// Check if site is in dark mode
+
 function DarkModeCheck() {
+    // Check if site is in dark mode
     let Regex = /style=C/g;
     DarkMode = Regex.exec(document.URL) != null;
 }
 
-// Gets top banner and changes its properties
+
 function UpdateTopBanner() {
+    // Gets top banner and changes its properties
     let topBanner = document.getElementsByTagName("table").valueOf()[0];
     topBanner.style.width = "100%";
     topBanner.style.margin = "0px auto";
@@ -15,11 +18,13 @@ function UpdateTopBanner() {
 }
 
 function UpdateMarginDarkMode() {
+    // I forgot what this function does, but it might fix something LUL
     let table = document.getElementsByClassName("fundo_meio")[0];
     table.style.margin = "0px auto";
 }
 
 function UpdateTextColor() {
+    // Update text color in the site footer
     let textColor;
     if (DarkMode) {
         textColor = "#FFFFFF";
@@ -47,24 +52,30 @@ function fixThemeButton() {
 }
 
 function fixThemeButtonImage(element) {
-    element.src = "https://i.imgur.com/UtKLylb.png";
+    let icon;
+    if (DarkMode) {
+        icon = browser.runtime.getURL("Images/sun_icon.png");
+    } else {
+        icon = browser.runtime.getURL("Images/moon_icon.png");
+    }
+    element.src = icon;
 }
 
 function fixCFAImageDark() {
     let siteImages = document.getElementsByTagName("img");
-
     for (let img in siteImages) {
         if (siteImages[img].src.endsWith("uploads/bnr_0021.png")) {      
             if (DarkMode) {
-                siteImages[img].src = "https://i.imgur.com/x3z8Vfw.png";
+                let CFA_DARK = browser.runtime.getURL("Images/CFA_Warning_Dark.png");
+                siteImages[img].src = CFA_DARK;
                 siteImages[img].width = 700;
             } else {
-                siteImages[img].src = "https://i.imgur.com/z23KQGO.png";
+                let CFA_LIGHT = browser.runtime.getURL("Images/CFA_Warning_Light.png");   
+                siteImages[img].src = CFA_LIGHT;
                 siteImages[img].width = 700;
             }
         }
-        else if (siteImages[img].src.endsWith("acessibilidade_altocontraste.png")) {
-            
+        else if (siteImages[img].src.endsWith("acessibilidade_altocontraste.png")) {    
             fixThemeButtonImage(siteImages[img])
         }
     }
@@ -72,7 +83,8 @@ function fixCFAImageDark() {
 
 function fixFAMLogo() {
     let logo = document.getElementsByClassName("topo_logo")[0];
-    logo.src = "https://i.imgur.com/SFPASn7.png";
+    let LOGO_IMAGE = browser.runtime.getURL("Images/FAM_Logo.png");
+    logo.src = LOGO_IMAGE;
     logo.style.width = "160px";
     logo.style.height = "60px";
     logo.style.marginLeft = "1.2%";

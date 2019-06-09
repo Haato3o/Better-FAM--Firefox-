@@ -154,9 +154,25 @@ function fixFAMLogo() {
 function removeTableSpacing() {
     let tables = document.getElementsByClassName("GradeNotas")[0];
     tables.parentElement.parentElement.parentElement.parentElement.cellPadding = 1;
+}
 
-    
-
+function fixNotasPadding() {
+    let regex = /notas.php/g;
+    if (regex.exec(document.URL) != null) {
+        let Notas = document.getElementsByClassName("LinhaPar");
+        for (let i in Notas) {
+            let Nota = Notas[i];
+            if (Nota.children != undefined) {
+                if (Nota.children[0] != undefined && Nota.children[0].nodeName == "TD") {
+                    Nota.children[0].style.paddingLeft = 25;
+                    Nota.style.backgroundColor = "transparent";
+                } else if (Nota.nodeName == "TD") {
+                    Nota.style.backgroundColor = "transparent";
+                    Nota.style.paddingLeft = 25;
+                }
+            }
+        }
+    }
 }
 
 function RunExtension() {
@@ -170,6 +186,7 @@ function RunExtension() {
     fixCFAImage();
     removeTableSpacing();
     UpdateTextColor(); 
+    fixNotasPadding();
 }
 
 RunExtension();

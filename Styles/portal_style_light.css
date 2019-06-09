@@ -195,6 +195,10 @@ tr.lovelyrow2 {
     color: #535353;
 }
 
+.nicepadding img {
+    margin-right: -30px;
+}
+
 .Grade {
     border-radius: 0px;
     border: none;
@@ -221,6 +225,9 @@ tr.lovelyrow2 {
     margin-left: 15px;
 }
 
+td.nicepadding {
+    padding-right: 30px;
+}
 
 #abas {
     font-family: "Roboto", sans-serif;
@@ -259,4 +266,48 @@ tr.lovelyrow2 {
     font-family: "Roboto", sans-serif;
     background-color: white;
     border: solid 1px #CCCCCC;
+}
+
+.barra_menu #menu, .barra_menu #menu li, .barra_menu #menu li a {
+    background: none;
+}
+
+.barra_menu #menu li {
+    margin-right: -10px;
+}
+.barra_menu #menu li a {
+    text-align: center;
+    margin-left: 25px;
+    color: white;
+    background-color: #036582;
+    transition: 200ms;
+    box-shadow: black 0px 0px 2px 0px;
+}
+
+.barra_menu #menu li a:hover {
+    background-color: #01526b;
+    color: #CCCCCC;
+}
+
+.fundo_meio td table tbody .fundo_meio td table {
+    margin-left: 25px;
+}
+
+/* Warning div */
+.GradeNotasAviso {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+}
+
+.GradeNotasAviso tbody tr td {
+    background-color: #dd2d2d;
+    box-shadow: black 0px 0px 3px 0px;
+    text-align: justify;
+    font-weight: normal;
+    padding: 10px 10px 10px 10px
+}
+
+.fundo_meio td table tbody .fundo_meio td.nicepadding table {
+    margin-left: 0px;
 }
